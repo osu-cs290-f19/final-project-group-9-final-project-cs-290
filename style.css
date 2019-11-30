@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body{
+  background-image: url(http://eescmedia.extension.oregonstate.edu:8085/there-detail/api/v1/asset/81727/preview);
+}
+.container {
+	/* background-color: rgb(215,63,9); */
+  /* background-image: url(http://writingcenter.oregonstate.edu/sites/default/files/media/default_images/Valley.jpg); */
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-width: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.row {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: inline-block
+}
+.row.blockDisplay {
+	display: block;
+}
+.column_half {
+	width: 50%;
+	float: left;
+	margin-top: 0px;
+}
+.columns {
+	width: 25%;
+	float: left;
+	font-family: "Source Sans Pro";
+	color: rgb(215,63,9);
+	line-height: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: justify;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.row .columns p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.container .columns h4 {
+	text-align: center;
+	color: rgb(215,63,9);
+}
+.primary_header {
+	width: 100%;
+   background-color: rgb(215,63,9);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	clear: left;
+  text-align: center;
+	border-bottom: 2px solid black;
+}
+.secondary_header {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 42px;
+	/* background-color: black; */
+  background-image: url(http://writingcenter.oregonstate.edu/sites/default/files/media/default_images/Valley.jpg);
+  clear: left;
+}
+.container .secondary_header ul {
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	width: 100%;
+}
+.secondary_header ul li {
+	list-style: none;
+	float: left;
+	margin-right: 100;
+	margin-top: 0px;
+	font-family: "Source Sans Pro";
+  font-size: 200%;
+	font-weight: normal;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	margin-left: 100;
+	text-align: center;
+	width: 16%;
+	transition: all 0.3s linear;
+}
+.secondary_header ul li:hover {
+	color: #D3832B;
+	cursor: pointer;
+}
