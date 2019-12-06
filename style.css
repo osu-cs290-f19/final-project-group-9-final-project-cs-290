@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 .container {
 	background-color: rgb(215,63,9);
@@ -199,3 +199,78 @@ fa:hover {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+
+/*  ***********  Added for Category.HTML  ***********  */
+
+#section-button {
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    background-color: #000;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    */
+    align-items: center;
+        
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: stretch;*/
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.categories {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+        */
+    align-self: stretch;
+    margin: 20px;
+    height: 100%;
+    width: 40%;
+        
+}
+
+.categories-content {
+
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.posts {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+        */
+    border: 3px solid black;
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+/*  *******************************************************  */
+    
