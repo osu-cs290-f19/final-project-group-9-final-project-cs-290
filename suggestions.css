@@ -1,0 +1,17 @@
+.form {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.actual-post {
+  border-bottom: 2px solid white;
+  padding: 5px;
+}
+
+.comment_section {
+  padding: 5px;
+}
+
+#problem {
+  padding-bottom: 20px;
+}

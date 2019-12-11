@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* start of new Calendar */
+.page-title {
+  text-align:center;
+}
+
+section {
+  text-align: center;
+  display: inline-block;
+}
+
+.post {
+  display: inline-block;
+  vertical-align: top;
+  height:155px;
+  width: 815px;
+  margin: 15px;
+  padding: 10px;
+  border: 0px solid black;
+  background-color: black;
+  overflow: hidden;
+  text-align: left;
+
+  font-family: "Roboto Slab", serif;
+  border-radius: 8px;
+}
+
+.inner-container {
+    display: flex;
+    height: 160px;
+}
+
+.post-mod {
+  margin-left: 20px;
+}
+
+.post-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  width: 450px;
+}
+
+.post-title {
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(215,63,9);
+  margin-bottom: 10px;
+
+  width:400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.post-title:hover {
+  color: white;
+  transition: .4s;
+}
+
+.post-description {
+margin-bottom: 15px;
+
+overflow: hidden;
+width:400px;
+display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.bottom {
+  align-items:stretch;
+  width: 400px;
+}
+
+#left {
+float: left;
+}
+
+.post-date {
+  font-weight: bold;
+}
+
+#right {
+float: right;
+}
+
+.post-button {
+  height:45px;
+  width:100px;
+  background-color: rgb(215,63,9);
+  border-radius: 4px;
+  color: white;
+  border-color: black;
+  font-weight: bold;
+}
+
+.post-button:hover {
+  background-color: white;
+  color: black;
+  transition: .4s;
+   cursor: pointer;
+}
+
+.photo-add img {
+  max-height: 160px;
+  min-height: 160px;
+  max-width: 355px;
+  min-width: 355px;
+  position: relative;
+  top: -3px;
+  right: -10px;
+
+  border-radius: 8px;
+}

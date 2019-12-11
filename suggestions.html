@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title >Beaver Social</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Suggestions.css">
+<link rel="stylesheet" href="report.css">
+<script src="suggestions.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="primary_header">
+                <h1 class="title"> Beaver Guide</h1>
+            </div>
+            <nav class="secondary_header" id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Photos</li>
+                    <li>Categories</li>
+                    <li>Suggestions</li>
+                    <li>Report</li>
+                    <li>Help</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa-search"></i></button>
+                </form>
+            </div>
+        </header>
+
+    <section id="problem">
+      <section class="break">
+        <aside class="side">
+          <div class="report-problem">
+            <h1 class="report-title"> Make a Suggestion</h1>
+          <div class="report-title-box">Subject</div>
+                <input type="text" id="sub-box" placeholder="Subject" name="problem-title">
+          <div class="report-description-box">Description</div>
+            <form >
+              <textarea id="des-box" placeholder="Description of issue..."></textarea>
+            </form>
+          <div class="submit">
+            <input type="button" id="myButton" class="submit-button" value="Submit"></input>
+          </div>
+        </div>
+      </aside>
+
+      <!-- <section class="whole-scroll">
+        <section class="scroll">
+          <div class="scroll-title">Make a Comment:</div>
+
+          <form class="form">
+            <textarea id="comment-box" class= "option-bar" placeholder="Comment..."></textarea>
+          </form>
+
+        </section>
+          <div class="option-bar-button">
+            <input type="button" id="b-button" class="bar-button" value="Submit Changes"></input>
+          </div>
+
+        </section> -->
+      </section>
+
+      <section id="all-posts">
+
+        <div class="post" title="Make the files cleaner" description="There is no javascript anywhere in this site.There is no javascript anywhere in this site.There is no javascript anywhere in this site.There is no javascript anywhere in this site.There is no javascript anywhere in this site.">
+          <div class="actual-post">
+            <div class="post-title-a">
+              <span class="post-title">Make the files cleaner</span>
+            </div>
+            <div class="post-description-a">
+              <span class="post-description">There is no javascript anywhere in this site.There is no javascript anywhere in this site.There is no javascript anywhere in this site.There is no javascript anywhere in this site.There is no javascript anywhere in this site.</span>
+            </div>
+          </div>
+
+          <!-- <section id="all-comments">
+            <div class="comment_section" comment="I really do agree the files do need to be a lot cleaner">
+              <span class="comment-">-</span>
+              <span class="comment">I really do agree the files do need to be a lot cleaner</span>
+            </div>
+          </section> -->
+        </div>
+
+      </section>
+
+      </section>
+
+    </body>
+</html>
