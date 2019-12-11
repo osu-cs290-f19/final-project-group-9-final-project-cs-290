@@ -57,20 +57,20 @@
 
 .secondary_header ul li {
 	font-family: 'Lobster', cursive;
-	background-color: black; 
-	color: rgb(255, 251, 251); 
+	background-color: black;
+	color: rgb(255, 251, 251);
 	border: 3px solid rgb(215,63,9);
   }
-  
+
   .secondary_header ul li:hover {
 	background-color: rgb(215,63,9);
 	box-shadow: 0 12px 16px 0 rgb(165, 48, 6), 0 17px 50px 0 rgb(165, 48, 6);
 	color: white;
   }
-  
+
 /* Style the search box inside the navigation bar */
 header input[type=text] {
-	
+
 	position: relative;
 	top: -4px;
     padding: 6px;
@@ -81,7 +81,7 @@ header input[type=text] {
     border: 3px solid rgb(0, 0, 0);
   }
   .topnav input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid #ccc;
   }
   header button {
 	/*float: right;*/
@@ -111,7 +111,7 @@ header button:hover {
 	bottom: 120px;
   }
 
-  
+
 header button {
 	position: relative;
 	top: -4px;
@@ -123,24 +123,90 @@ header button {
 	border: none;
 	cursor: pointer;
   }
-  
+
 header button:hover {
 	background: #ccc;
   }
-  
+
   .fa-search:before {
     content: "\f002";
 }
-
-#Photo-Book{
+.mySlides
+{
 	position: relative;
-	left: 35%;
-	bottom: 49px;
-    width: 500px;
-    background-color: black;
+	bottom: -10px;
+	height: 2%;
+  	width: 100%;
 
 }
 
+.info
+{
+	position: relative;
+	bottom: 100px;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	color: rgb(255, 251, 251);
+	border: 4px solid rgb(215,63,9);
+}
+.info:hover
+{
+	background-color: rgb(215,63,9);
+	box-shadow: 0 12px 16px 0 rgb(165, 48, 6), 0 17px 50px 0 rgb(165, 48, 6);
+	color: white;
+}
+
+fa:hover {
+    opacity: 0.7;
+}
+.icon {
+  position: relative;
+  bottom: 100%;
+  left: 50%;
+	width: 200%
+	height: 200%
+}
+.sr-only{
+	position: relative;
+  left: 50px;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	font-size: 200%;
+	color: white;
+  }
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  /* color: white; */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Photo-Book{
+	position: relative;
+	left: 30%;
+	bottom: 10px;
+  width: 500px;
+  background-color: black;
+
+}
 h1.book-lable{
 	text-align: center;
 	color: white;
@@ -150,8 +216,6 @@ h1.book-lable{
 	border-color: black;
 	border-width: 3px;
 }
-
-
 
 .filter-input-container{
 	position: relative;
@@ -183,22 +247,22 @@ h1.book-lable{
     border-color: black;
     border-width: 9px;
   }
-  
+
   /* Create four equal columns that sits next to each other */
   .column {
 	flex: 25%;
 	max-width: 25%;
 	padding: 0 4px;
   }
-  
+
   .column img {
 	margin-top: 8px;
 	vertical-align: middle;
 	width: 100%;
 	height: 170px;
   }
- 
-  
+
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
 	.column {
@@ -206,7 +270,7 @@ h1.book-lable{
 	  max-width: 50%;
 	}
   }
-  
+
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
 	.column {
@@ -216,7 +280,7 @@ h1.book-lable{
   }
 
 
-  
+
 
 /* Container needed to position the overlay. Adjust the width as needed */
 .container-b {
@@ -252,9 +316,9 @@ h1.book-lable{
 	cursor: pointer;
 	transition: 0.3s;
   }
-  
+
   .image-1:hover {opacity: 0.7;}
-  
+
   /* The Modal (background) */
   .modal {
 	display: none; /* Hidden by default */
@@ -269,7 +333,7 @@ h1.book-lable{
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
-  
+
   /* Modal Content (Image) */
   .modal-content {
 	margin: auto;
@@ -277,7 +341,6 @@ h1.book-lable{
 	width: 80%;
 	max-width: 700px;
   }
-  
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
 	margin: auto;
@@ -289,18 +352,15 @@ h1.book-lable{
 	padding: 10px 0;
 	height: 150px;
   }
-  
   /* Add Animation - Zoom in the Modal */
   .modal-content, #caption {
 	animation-name: zoom;
 	animation-duration: 0.6s;
   }
-  
   @keyframes zoom {
 	from {transform:scale(0)}
 	to {transform:scale(1)}
   }
-  
   /* The Close Button */
   .close {
 	position: absolute;
@@ -311,22 +371,237 @@ h1.book-lable{
 	font-weight: bold;
 	transition: 0.3s;
   }
-  
   .close:hover,
   .close:focus {
 	color: #bbb;
 	text-decoration: none;
 	cursor: pointer;
   }
-  
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
 	.modal-content {
 	  width: 100%;
 	}
   }
+	#section-button {
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    background-color: #000;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    */
+    align-items: center;
 
-/* for 404 */
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: stretch;*/
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+#divider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: stretch;*/
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.categories {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+        */
+    align-self: stretch;
+    margin: 20px;
+    height: 100%;
+    width: 40%;
+
+}
+
+.categories-content {
+
+    height: 100%;
+    width: 100%;
+}
+
+section {
+  text-align: center;
+  display: inline-block;
+}
+
+.not-main {
+    height: 515px;
+    /* width: 515px; */
+    width:auto;
+    display: inline-block;
+    align: center;
+    border-radius: 8px;
+    border: 5px solid black;
+
+    margin: 30px;
+}
+
+.this-week {
+  display: flex;
+
+  height:275px;
+  width: 500px;
+  text-align: center;
+}
+
+.team-card {
+width: 175px;
+text-align: center;
+}
+
+.oregon-team {
+  text-align: center;
+  position: relative;
+  top: 85px;
+}
+
+
+.middle {
+  width:150px;
+}
+
+.vs {
+  text-align: center;
+  position: relative;
+  top: 110px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.oregon-team img {
+  max-width: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  min-height: 100px;
+
+  border: 2px solid black;
+
+  border-radius: 50%;
+}
+
+.team {
+  position: relative;
+  top:85px;
+  font-weight: bold;
+}
+
+.record {
+  position: relative;
+  top:85px;
+}
+
+.basketball {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  top: 10px;
+}
+
+
+
+.next-week {
+  display: flex;
+  border-top: 2px solid black;
+  height:220px;
+  width: 500px;
+}
+
+.second-logo img {
+  max-width: 30px;
+  min-width: 30px;
+  max-height: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+table {
+  display: flex;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 34px;
+
+}
+
+#first-i {
+padding-left: 25px;
+padding-right: 10px;
+}
+
+#second-i {
+width:53px;
+float: left;
+}
+
+.table-team {
+  padding-right: 5px;
+  font-weight: bold;
+  width: 92px;
+}
+
+.table-record {
+  width: 40px;
+}
+
+.table-vs {
+    font-weight: bold;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.posts {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+        */
+		background-color: rgb(0,0,0);
+	  color: rgb(255,255,255);
+    border: 3px solid black;
+		border-radius: 40px;
+		/* padding-left: 10%; */
+		padding: 1% 10%;
+		margin: 20px;
+    height: 100%;
+    width: 40%;
+}
+
 .error {
   text-align: center;
     font-size: 30px;

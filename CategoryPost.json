@@ -1,0 +1,32 @@
+[
+  {
+    "Category": "Classes",
+    "URL": "window.location.href = '/classes';",
+    "classDescription": "classes-button"
+  },
+  {
+    "Category": "Registration",
+    "URL": "window.location.href = '/registration';",
+    "classDescription": "registration-button"
+  },
+  {
+    "Category": "Events",
+    "URL": "window.location.href = '/events';",
+    "classDescription": "events-buttons"
+  },
+  {
+    "Category": "Tech Guides",
+    "URL": "window.location.href = '/techguide';",
+    "classDescription": "techGuide-button"
+  },
+  {
+    "Category": "OSU VS",
+    "URL": "window.location.href = '/osuvs';",
+    "classDescription": "vs-button"
+  },
+  {
+    "Category": "General Guides",
+    "URL": "window.location.href = '/generalguide';",
+    "classDescription": "generalGuide-button"
+  }
+]

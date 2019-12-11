@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/CategoryPost.handlebars -f public/CategoryCard.js",
+    "start": "node server.js",
+    "prestart" : "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/osu-cs290-f19/final-project-group-9-final-project-cs-290/issues"
   },
-  "homepage": "https://github.com/osu-cs290-f19/final-project-group-9-final-project-cs-290#readme"
+  "homepage": "https://github.com/osu-cs290-f19/final-project-group-9-final-project-cs-290#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.5.3",
+    "nodemon": "^2.0.1"
+  }
 }

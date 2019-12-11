@@ -1,23 +1,23 @@
-/*var myIndex = 0;
+var myIndex = 0;
 		bubble();
-		
+
 		function bubble() {
 		  var i;
           var x = document.getElementsByClassName("mySlides");
           var y = document.getElementsByClassName("info");
 		  for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-            y[i].style.display = "none";  
+            x[i].style.display = "none";
+            y[i].style.display = "none";
 		  }
 		  myIndex++;
-          if (myIndex > x.length) 
+          if (myIndex > x.length)
           {
               myIndex = 1
-          }    
-          x[myIndex-1].style.display = "block";  
-          y[myIndex-1].style.display = "block"; 
+          }
+          x[myIndex-1].style.display = "block";
+          y[myIndex-1].style.display = "block";
 		  setTimeout(bubble, 3000); // Change image every 3 seconds
-    }*/
+    }
 
     var id;
     document.addEventListener('click',function(event){
@@ -30,7 +30,7 @@
       modalImg.src = id.src;
       captionText.innerHTML = id.alt;
 
-    });   
+    });
     // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -53,9 +53,9 @@ var section = document.getElementsByClassName("container-b");
 function checkForTxt()
 {
     var userInputTxt = document.getElementById("filter-text");
- 
+
     var filter1 = userInputTxt.value.toUpperCase();
-    
+
     var itemsByName = section;
     for( var i = itemsByName.length - 1; i >= 0; i--)
     {
@@ -66,7 +66,7 @@ function checkForTxt()
 
             if(txtValue.toUpperCase().indexOf(filter1) > -1)
             {
-        
+
                 itemsByName[i].style.display = "";
 
             }
@@ -74,7 +74,7 @@ function checkForTxt()
             {
                 itemsByName[i].remove();
             }
-        
+
     }
 
 }
@@ -84,11 +84,11 @@ var input = document.getElementById("filter-update-button").addEventListener("cl
 {
     var userInputTxt = document.getElementById("filter-text");
     var filter1 = userInputTxt.value.toUpperCase();
-    
+
 
     if (filter1 != "") //if there is text
     {
         checkForTxt();
     }
-    
+
 });
