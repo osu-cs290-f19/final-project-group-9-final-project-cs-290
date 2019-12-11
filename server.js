@@ -5,6 +5,7 @@ var exphbs = require('express-handlebars');
 var port = process.env.PORT || 3000;
 
 var Postdata = require('./CategoryPost');
+var EventPt = require('./EventsPost');
 
 
 
@@ -57,7 +58,7 @@ app.get('/osuvs', function(req, res){
 });
 
 app.get('/events', function(req, res){
-  res.status(200).render('events');
+  res.status(200).render('events', {EventCard : EventPt});
 });
 
 app.get('/techguide', function(req, res){
