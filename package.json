@@ -1,0 +1,19 @@
+{
+  "name": "final-project-group-9-final-project-cs-290",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f19/final-project-group-9-final-project-cs-290.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f19/final-project-group-9-final-project-cs-290/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f19/final-project-group-9-final-project-cs-290#readme"
+}
