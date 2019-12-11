@@ -325,3 +325,9 @@ h1.book-lable{
 	  width: 100%;
 	}
   }
+
+/* for 404 */
+.error {
+  text-align: center;
+    font-size: 30px;
+}
