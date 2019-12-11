@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 .container {
 	background-color: rgb(215,63,9);
@@ -14,19 +14,17 @@
 
 .primary_header {
 	width: 100%;
-	background-color: rgb(215,63,9);
+	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px orange;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	clear: left;
-  text-align: center;
+  	text-align: center;
 	border-bottom: 2px solid black;
 }
 .secondary_header {
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 42px;
-	padding-right: -10px;
-	padding-left: -10px;
 	background-color: black;
 	clear: left;
 }
@@ -58,31 +56,32 @@
 }
 
 .secondary_header ul li {
-	background-color: black;
-	color: rgb(255, 251, 251);
+	font-family: 'Lobster', cursive;
+	background-color: black; 
+	color: rgb(255, 251, 251); 
 	border: 3px solid rgb(215,63,9);
   }
-
+  
   .secondary_header ul li:hover {
 	background-color: rgb(215,63,9);
 	box-shadow: 0 12px 16px 0 rgb(165, 48, 6), 0 17px 50px 0 rgb(165, 48, 6);
 	color: white;
   }
-
+  
 /* Style the search box inside the navigation bar */
 header input[type=text] {
-
-    position: relative;
+	
+	position: relative;
+	top: -4px;
     padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+  	margin-top: 8px;
+  	font-size: 17px;
   }
  header input[type=text] {
     border: 3px solid rgb(0, 0, 0);
   }
   .topnav input[type=text] {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc;  
   }
   header button {
 	/*float: right;*/
@@ -112,9 +111,10 @@ header button:hover {
 	bottom: 120px;
   }
 
-
+  
 header button {
-
+	position: relative;
+	top: -4px;
 	padding: 6px 10px;
 	margin-top: 8px;
 	margin-right: 16px;
@@ -123,169 +123,205 @@ header button {
 	border: none;
 	cursor: pointer;
   }
-
+  
 header button:hover {
 	background: #ccc;
   }
-
+  
   .fa-search:before {
     content: "\f002";
 }
 
-
-
-
-
-
-
-.mySlides
-{
+#Photo-Book{
 	position: relative;
-	bottom: 50px;
-	height: 2%;
-  	width: 100%;
+	left: 35%;
+	bottom: 49px;
+    width: 500px;
+    background-color: black;
 
 }
 
-.info
-{
-	position: relative;
-	bottom: 100px;
-	width: 100%;
-	height: 100px;
-	background-color: black;
-	color: rgb(255, 251, 251);
-	border: 4px solid rgb(215,63,9);
-}
-.info:hover
-{
-	background-color: rgb(215,63,9);
-	box-shadow: 0 12px 16px 0 rgb(165, 48, 6), 0 17px 50px 0 rgb(165, 48, 6);
+h1.book-lable{
+	text-align: center;
 	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px orange;
+	font-family: 'Lobster', cursive;
+	border-style: outset;
+	border-color: black;
+	border-width: 3px;
 }
 
 
 
-
-
-fa:hover {
-    opacity: 0.7;
-}
-
-.icon {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-
-/*  ***********  Added for Category.HTML  ***********  */
-
-#section-button {
+.filter-input-container{
+	position: relative;
+    top: 70px;
+    left: 498px;
+    width: 34.7%;
+    background: black;
     font-size: 30px;
+    text-align: center;
     color: white;
-    padding: 20px;
-    background-color: #000;
-    border: 1px solid #ababab;
-    border-radius: 5px;
-    font-weight: lighter;
-    cursor: pointer;
-    /*
+    text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px orange;
+    font-family: 'Lobster', cursive;
+    border-style: outset;
+    border-color: black;
+}
+
+
+
+
+
+
+.row {
+	position: relative;
+    left: 5px;
+    top: -5px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 98%;
+    border-style: outset;
+    border-color: black;
+    border-width: 9px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	height: 170px;
+  }
+ 
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
 
-    */
-    align-items: center;
 
-    height: 100%;
-    width: 100%;
+  
 
-
+/* Container needed to position the overlay. Adjust the width as needed */
+.container-b {
+  position: relative;
 }
 
-#categories {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    /*justify-content: stretch;*/
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+	position: absolute;
+  	bottom: 0;
+  	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px orange;
+  	width: 100%;
+  	transition: .5s ease;
+  	opacity:0;
+  	color: white;
+  	font-size: 20px;
+  	text-align: center;
 }
 
-#divider {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    /*justify-content: stretch;*/
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-}
-
-.categories {
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-        */
-    align-self: stretch;
-    margin: 20px;
-    height: 100%;
-    width: 40%;
-
-}
-
-.categories-content {
-
-    height: 100%;
-    width: 100%;
+/* When you mouse over the container, fade in the overlay title */
+.container-b:hover .overlay {
+  opacity: 1;
 }
 
 
 
-.posts {
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-        */
-		background-color: rgb(0,0,0);
-	  color: rgb(255,255,255);
-    border: 3px solid black;
-		border-radius: 40px;
-		/* padding-left: 10%; */
-		padding: 1% 10%;
-		margin: 20px;
-    height: 100%;
-    width: 40%;
-}
-
-/*  *******************************************************  */
+/* Style the Image Used to Trigger the Modal */
+.image {
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .image-1:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	}
+  }
