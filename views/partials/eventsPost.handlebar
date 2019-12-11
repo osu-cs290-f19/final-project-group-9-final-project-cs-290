@@ -1,0 +1,16 @@
+<div class="post" data-name="the_name" data-city="the_city" date-date="12/20/19">
+  <div class="inner-container">
+    <div class="post-info-container">
+      <a href="https://www.eatwintervegetables.com/the-project" class="post-title">Winter Vegetable Sagra and Fill Your Pantry</a>
+      <div class="post-description">The 3rd annual Winter Vegetable Sagra (festival) is a celebration to learn about, taste and become enamored with winter squash, celeriac, garlic, cabbage, cauliflower, radicchio and brussels sprouts grown right here in Oregon. Attendees learn about locally grown foods and where to buy them, and how to store, prepare and cook vegetables and grains.
+          They also have the opportunity to taste home-cook-friendly recipes created by chefs, food advocates and nutritionists. Come taste home-cook friendly recipes created by local chefs, food activists and nutritionists including: Cook With What You Have, Umi Organic, Real Good Food, Food Art Love, Joule Crafted Nutrition, Wildflower Baking, Mian PDX, Tournant, The Side Yard Farm and Kitchen, National University of Naturopathic Medicine and more.</div>
+      <div class="bottom">
+        <div id="left">
+          <div class="post-date">12/12/19</div>
+          <div class="post-city">831 SE Salmon St, Portland</div>
+        </div>
+        <div id="right">
+          <input type="button" value="Interested" id="myButton10" class="post-button"></input>
+        </div>
+      </div>
+    </div>
